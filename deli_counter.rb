@@ -1,17 +1,7 @@
 def line(people)
-  if people == []
-      puts "The line is currently empty."
-    else
-    katz_deli =[]
-    people.each_with_index do |person, index|
-      katz_deli.push("The line is currently #{index}. #{person}")
-    end
-
-    return katz_deli
-
-  end
+  katz_deli = []
+  people.each_with_index do |person, index|
+  katz_deli.push("#{index+1}. #{person}")
 end
-
-def take_a_number(katz_deli, name)
-  
+puts "The line is currently: #{katz_deli}."
 end
